@@ -18,10 +18,11 @@
 }
 .about-title img{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
+    bottom: 10%;
+    right: -5%;
+    z-index: -1;
+    width: 130px;
+    
 }
 .about-section{
     display: flex;
@@ -119,4 +120,13 @@
 .about-achievements hr{
 
     height: 60px;
+}
+.services-readmore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.services-readmore img{
+    width: 20px;
+    padding-top: 3px;
 }
