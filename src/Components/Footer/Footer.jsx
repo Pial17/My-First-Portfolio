@@ -26,11 +26,11 @@ const Footer = () => {
                 <p className="footer-bottom-left">
                 © 2024 Pial Rafsan. All rights reserved.
                 </p>
-            </div>
-            <div className="footer-bottom-right">
-                <p>Term of services</p>
-                <p>Privecy Policy</p>
-                <p>Connect with me</p>
+                <div className="footer-bottom-right">
+                    <p>Term of services</p>
+                    <p>Privecy Policy</p>
+                    <p>Connect with me</p>
+                </div>
             </div>
         </div>
     );

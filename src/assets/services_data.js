@@ -2,12 +2,12 @@ const Services_Data = [
     {
         s_no:"01",
         s_name:"Web design",
-        s_desc:"Web development is the process of building, programming..."
+        s_desc:"Web development is the process of building, programming,Web development is the process of building, programmingWeb development is the process of building, programmingWeb development is the process of building, programmingWeb development is the process of building, programmingWeb development is the process of building, programmingWeb development is the process of building, programming..."
     },
     {
         s_no:"02",
         s_name:"Graphics design",
-        s_desc:"Graphics design is the process of building, programming..."
+        s_desc:"Graphics design is the process of building, programming Web development is the process of building, programming,Web development is the process of building, programmingWeb development is the process of building, programmingWeb development is the s..."
     },
     {
         s_no:"03",

@@ -22,39 +22,87 @@
     z-index: -1;
     width: 110px;
 }
-.services-format{
+
+.services-format {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     padding: 24px;
     border: 2px solid white;
     gap: 15px;
     border-radius: 30px;
-    transition: .4s;
+    transition: all 0.4s ease;
     cursor: pointer;
+    height: auto; /* Ensure dynamic height */
+    overflow: hidden;
 }
 .services-format:hover{
     transform: scale(1.1);
-    background-image: linear-gradient(45deg, #3f0028, #582300);
-    border: 2px solid #ff00ff;
+    background-image: linear-gradient(45deg, #3f0028, #3083db);
+    border: 2px solid #4c4e52;
 }
-.services-container{
+
+.services-format .services-header {
+    position: sticky;
+    top: 0;
+    background: rgb(17, 17, 17); /* Match the card background */
+    z-index: 1;
+    padding: 10px 0;
+    text-align: left;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-format h3,
+.services-format h2 {
+    margin: 0;
+    color: white;
+}
+
+.services-format p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines initially */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* The ... format at the end of the text*/
+    transition: all 0.3s ease;
+}
+
+.services-format.expanded p {
+    display: block; /* Show the full text */
+    overflow-y: auto; /* Enable scrollbar only in expanded state */
+    max-height: 180px; /* Allow scrolling for long content */
+    padding-right: 4px; /* Add padding for scrollbar visibility */
+}
+
+.services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
     gap: 30px;
     margin-bottom: 60px;
     width: 80%;
 }
-.services-format h2{
-    background: linear-gradient(270deg, #DA7C25 10%, #B923E1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.services-readmore{
+
+.services-readmore {
     border-radius: 50px;
     font-size: 14px;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+}
 
+.services-readmore img {
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+
+.services-format.expanded .services-readmore img {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
 }
