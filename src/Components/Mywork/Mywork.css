@@ -70,3 +70,14 @@
     border-color: #B923E1;
     gap: 19px;
 }
+@media(max-width:700px){
+    .mywork-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mywork-container img{
+        width: 360px;
+    }
+}

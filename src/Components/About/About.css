@@ -29,7 +29,7 @@
     gap: 40px;
     justify-content: first baseline;
     width: 90%;
-    
+    margin-bottom: 20px;
 }
 .about-section .about-left{
     display: flex;
@@ -129,4 +129,42 @@
 .services-readmore img{
     width: 20px;
     padding-top: 3px;
+}
+
+@media(max-width:700px){
+    .about{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 20px;
+        gap: 20px;
+    }
+    .about-section{
+        align-items: center;
+        justify-content: first baseline;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-section .about-left{
+        margin: 0px;
+    }
+    .about-achievements{
+        align-items: center;
+        justify-content: first baseline;
+        flex-direction: column;
+        gap: -30px;
+    }
+    .about-achievements hr{
+        width: 60px;
+        height: 2px;
+        padding: 0;
+        background: linear-gradient(270deg, #DA7C25 10%, #B923E1 100%);
+        border: none;
+    }
+    .about-achievement h1{
+        font-size: 30px;
+    }
+    .about-achievement p{
+        font-size: 22px;
+    }
 }
